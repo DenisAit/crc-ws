@@ -1,40 +1,71 @@
-# SSL Setup für Cloudflare
+# SSL Setup für `rdf-nc.de` mit Let's Encrypt
 
-## Cloudflare Origin Certificate erstellen
+Wir nutzen `certbot` (HTTP-01 Challenge) im selben Docker-Compose-Stack.
+Cloudflare wird **nicht** vorgeschaltet, der DNS-A-Record zeigt direkt auf den VPS.
 
-1. Loggen Sie sich in Ihr Cloudflare Dashboard ein
-2. Wählen Sie die Domain `lsc-nc.de` aus
-3. Gehen Sie zu **SSL/TLS** > **Origin Server**
-4. Klicken Sie auf **Create Certificate**
-5. Konfigurieren Sie das Zertifikat:
-   - **Hostnames**: `lsc-nc.de`, `*.lsc-nc.de`
-   - **Certificate Validity**: 15 years
-   - **Key type**: RSA (2048)
+## Voraussetzungen auf dem VPS
 
-6. Kopieren Sie das **Origin Certificate** und speichern Sie es als `cloudflare-origin.pem`
-7. Kopieren Sie den **Private Key** und speichern Sie ihn als `cloudflare-origin.key`
+1. **DNS** zeigt direkt auf die VPS-IP:
+   ```
+   rdf-nc.de       A    <VPS-IP>
+   www.rdf-nc.de   A    <VPS-IP>
+   ```
+2. **Firewall offen** für TCP `80` und `443`.
+3. **Docker + Docker Compose** installiert.
+4. Repository geklont, `.env` mit allen Werten neben `docker-compose.prod.yml` abgelegt
+   (siehe `env.prod.example` als Vorlage). Insbesondere `LETSENCRYPT_EMAIL` ist gesetzt.
 
-## Cloudflare SSL/TLS Einstellungen
-
-1. Gehen Sie zu **SSL/TLS** > **Overview**
-2. Setzen Sie den **SSL/TLS encryption mode** auf **Full (strict)**
-
-## Nginx Konfiguration
-
-Die Nginx-Konfiguration ist bereits für Cloudflare optimiert:
-- Cloudflare IP-Ranges für echte IP-Erkennung
-- HTTPS-Weiterleitung von HTTP
-- Cloudflare-spezifische Header
-- SSL-Konfiguration für Origin Server
-
-## Deployment
-
-Nach dem Erstellen der Zertifikate:
+## Initiales Zertifikat holen (einmalig)
 
 ```bash
-# Produktionsumgebung starten
-docker-compose -f docker-compose.prod.yml up -d
+# 1. ins Repo
+cd /opt/crc-ws
 
-# Logs überprüfen
-docker-compose -f docker-compose.prod.yml logs nginx
+# 2. .env muss vorhanden sein und LETSENCRYPT_EMAIL enthalten
+grep LETSENCRYPT_EMAIL .env
+
+# 3. Restlichen Stack einmal hochfahren, damit api/web/db gebaut/gestartet sind
+docker compose -f docker-compose.prod.yml up -d db api web
+
+# 4. Init-Script ausführen (zieht das echte Cert)
+chmod +x ssl/init-letsencrypt.sh
+LETSENCRYPT_EMAIL="$(grep -E '^LETSENCRYPT_EMAIL=' .env | cut -d= -f2- | tr -d '"')" \
+  ./ssl/init-letsencrypt.sh
+
+# 5. Den Rest des Stacks dazustarten (certbot-Daemon für Auto-Renewal)
+docker compose -f docker-compose.prod.yml up -d
 ```
+
+Danach erreicht `https://rdf-nc.de` deinen Stack mit gültigem Let's Encrypt Cert.
+
+## Test mit Staging (gegen Rate-Limits gewappnet)
+
+Wenn du beim Debuggen viel rumprobierst, nutze erst Staging
+(Browser zeigt dann „nicht vertrauenswürdig", aber du verbrennst keine Issuance-Quote):
+
+```bash
+LETSENCRYPT_STAGING=1 LETSENCRYPT_EMAIL="..." ./ssl/init-letsencrypt.sh
+```
+
+Sobald alles klappt, mit `LETSENCRYPT_STAGING=0` (oder weglassen) für ein echtes Cert nochmal laufen lassen.
+
+## Auto-Renewal
+
+Der `certbot`-Container läuft permanent und versucht alle 12h `certbot renew`.
+Wenn ein Cert erneuert wird, lädt der `nginx`-Container alle 6h `nginx -s reload`,
+sodass das neue Cert automatisch aktiv wird. Du musst manuell nichts tun.
+
+Status prüfen:
+```bash
+docker compose -f docker-compose.prod.yml logs certbot --tail 50
+docker compose -f docker-compose.prod.yml exec certbot certbot certificates
+```
+
+## Troubleshooting
+
+| Problem | Ursache / Fix |
+|---|---|
+| `Connection refused` beim Issue | Port 80 nicht offen oder DNS zeigt nicht auf VPS |
+| `too many failed authorizations` | Du hast Staging-Limits erreicht – warte oder anderen Account |
+| Nginx startet nicht („no such file: fullchain.pem") | Init-Script wurde nicht ausgeführt; Dummy-Cert fehlt |
+| Cert läuft trotz Container ab | `certbot`-Container down? `docker compose ... ps` prüfen |

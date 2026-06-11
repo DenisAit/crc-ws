@@ -1,5 +1,5 @@
 @echo off
-REM La Santa Landing Page - Simple Start (ohne Docker)
+REM Reyes del Fuego Landing Page - Simple Start (ohne Docker)
 REM ====================================================
 
 echo.

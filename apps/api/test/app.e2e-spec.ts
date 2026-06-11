@@ -30,7 +30,7 @@ describe('AppController (e2e)', () => {
       return request(app.getHttpServer())
         .get('/api')
         .expect(200)
-        .expect('LaSanta Calavera API is running! 💀');
+        .expect('Reyes del Fuego API is running! 💀');
     });
 
     it('/api/health (GET)', () => {
@@ -39,7 +39,7 @@ describe('AppController (e2e)', () => {
         .expect(200)
         .expect((res) => {
           expect(res.body).toHaveProperty('status', 'ok');
-          expect(res.body).toHaveProperty('service', 'LaSanta Calavera API');
+          expect(res.body).toHaveProperty('service', 'Reyes del Fuego API');
           expect(res.body).toHaveProperty('timestamp');
         });
     });

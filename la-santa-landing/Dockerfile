@@ -1,4 +1,4 @@
-# La Santa Landing Page - Development
+# Reyes del Fuego Landing Page - Development
 FROM nginx:alpine
 
 # Copy website files

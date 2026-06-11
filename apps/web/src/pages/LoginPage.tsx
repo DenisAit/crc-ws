@@ -76,7 +76,7 @@ export default function LoginPage() {
                 <div className="relative">
                   <img 
                     src="/logo.png" 
-                    alt="La Santa Calavera" 
+                    alt="Reyes del Fuego" 
                     className="h-32 w-32 object-contain drop-shadow-[0_0_30px_rgba(251,191,36,0.6)] transition-transform duration-500 hover:scale-110"
                   />
                 </div>
@@ -84,7 +84,7 @@ export default function LoginPage() {
 
               {/* Title */}
               <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-400 tracking-tight text-center">
-                La Santa Calavera
+                Reyes del Fuego
               </h1>
               <div className="flex items-center gap-2 mt-3">
                 <div className="h-px w-12 bg-gradient-to-r from-transparent to-amber-500/50" />
@@ -167,7 +167,7 @@ export default function LoginPage() {
                 </p>
                 <div className="flex items-center gap-3 text-amber-500/60">
                   <div className="h-px w-8 bg-gradient-to-r from-transparent to-amber-500/30" />
-                  <span className="text-sm font-medium tracking-wider">VIVA LA SANTA</span>
+                  <span className="text-sm font-medium tracking-wider">VIVA LOS REYES</span>
                   <div className="h-px w-8 bg-gradient-to-l from-transparent to-amber-500/30" />
                 </div>
               </div>
@@ -226,7 +226,7 @@ export default function LoginPage() {
         <div className="absolute -bottom-12 left-1/2 -translate-x-1/2">
           <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/80 backdrop-blur-sm rounded-full border border-gray-800">
             <div className="h-2 w-2 bg-green-500 rounded-full animate-pulse" />
-            <span className="text-xs text-gray-500">LSC System v2.0</span>
+            <span className="text-xs text-gray-500">RDF System v2.0</span>
           </div>
         </div>
       </div>

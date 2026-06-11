@@ -162,7 +162,7 @@ async function main() {
     create: {
       key: 'app_config',
       value: {
-        name: 'LaSanta Calavera',
+        name: 'Reyes del Fuego',
         version: '1.0.0',
         theme: 'dark',
         colors: {

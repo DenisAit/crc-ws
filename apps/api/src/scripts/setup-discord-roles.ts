@@ -6,129 +6,150 @@ async function setupDiscordRoles() {
   try {
     console.log('🚀 Richte Discord-Rollen-Mappings ein...');
 
-    // Discord-Rollen-Mappings definieren (neue 13 Ränge)
+    // Discord-Rollen-Mappings (13 Ränge + Basis-Rolle + Funktionsrollen + Legacy)
     const roleMappings = [
+      // Basis-Rolle "Reyes del Fuego" - Familienzugehörigkeit (Anwärter / Lese-Zugriff)
+      {
+        discordRoleId: '1514604027256635467',
+        systemRole: Role.FUTURO,
+        name: 'Reyes del Fuego',
+        isActive: true,
+      },
       // Leaderschaft
       {
-        discordRoleId: '1431388062474309701', // 👑 - El Patrón
+        discordRoleId: '1514604027281674299', // 👑 - El Patrón
         systemRole: Role.EL_PATRON,
-        name: 'El Patrón'
+        name: 'El Patrón',
+        isActive: true,
       },
       {
-        discordRoleId: '1431388062474309699', // 🔥 - Don (El Capitán)
+        discordRoleId: '1514604027281674298', // 🔥 - Don (El Capitán)
         systemRole: Role.DON_CAPITAN,
-        name: 'Don - El Capitán'
+        name: 'Don - El Capitán',
+        isActive: true,
       },
       {
-        discordRoleId: '1438638866432135348', // 🛡️ - Don (El Comandante)
+        discordRoleId: '1514604027281674297', // 🛡️ - Don (El Comandante)
         systemRole: Role.DON_COMANDANTE,
-        name: 'Don - El Comandante'
+        name: 'Don - El Comandante',
+        isActive: true,
       },
       {
-        discordRoleId: '1431388062474309698', // 🤝 - El Mano Derecha
+        discordRoleId: '1514604027281674296', // 🤝 - El Mano Derecha
         systemRole: Role.EL_MANO_DERECHA,
-        name: 'El Mano Derecha'
+        name: 'El Mano Derecha',
+        isActive: true,
       },
       // Ränge 7-9
       {
-        discordRoleId: '1431388062427906229', // 🔒 - 9 | El Custodio
+        discordRoleId: '1514604027281674294', // 🔒 - 9 | El Custodio
         systemRole: Role.EL_CUSTODIO,
-        name: '9 | El Custodio'
+        name: '9 | El Custodio',
+        isActive: true,
       },
       {
-        discordRoleId: '1438641189372035092', // 📚 - 8 | El Mentor
+        discordRoleId: '1514604027281674293', // 📚 - 8 | El Mentor
         systemRole: Role.EL_MENTOR,
-        name: '8 | El Mentor'
+        name: '8 | El Mentor',
+        isActive: true,
       },
       {
-        discordRoleId: '1438641369038979295', // 🧰 - 7 | El Encargado
+        discordRoleId: '1514604027273416796', // 🧰 - 7 | El Encargado
         systemRole: Role.EL_ENCARGADO,
-        name: '7 | El Encargado'
+        name: '7 | El Encargado',
+        isActive: true,
       },
       // Ränge 4-6
       {
-        discordRoleId: '1438637584975921286', // ⭐ - 6 | El Teniente
+        discordRoleId: '1514604027273416795', // ⭐ - 6 | El Teniente
         systemRole: Role.EL_TENIENTE,
-        name: '6 | El Teniente'
+        name: '6 | El Teniente',
+        isActive: true,
       },
       {
-        discordRoleId: '1431388062427906228', // ⚔️ - 5 | Soldado
+        discordRoleId: '1514604027273416794', // ⚔️ - 5 | Soldado
         systemRole: Role.SOLDADO,
-        name: '5 | Soldado'
+        name: '5 | Soldado',
+        isActive: true,
       },
       {
-        discordRoleId: '1438642330532839596', // 🐍 - 4 | El Prefecto
+        discordRoleId: '1514604027273416793', // 🐍 - 4 | El Prefecto
         systemRole: Role.EL_PREFECTO,
-        name: '4 | El Prefecto'
+        name: '4 | El Prefecto',
+        isActive: true,
       },
       // Ränge 1-3
       {
-        discordRoleId: '1438641614481264743', // 🫢 - 3 | El Confidente
+        discordRoleId: '1514604027273416792', // 🫢 - 3 | El Confidente
         systemRole: Role.EL_CONFIDENTE,
-        name: '3 | El Confidente'
+        name: '3 | El Confidente',
+        isActive: true,
       },
       {
-        discordRoleId: '1438639256275914752', // 🐢 - 2 | El Protector
+        discordRoleId: '1514604027273416791', // 🐢 - 2 | El Protector
         systemRole: Role.EL_PROTECTOR,
-        name: '2 | El Protector'
+        name: '2 | El Protector',
+        isActive: true,
       },
       {
-        discordRoleId: '1438636794181718199', // 🌱 - 1 | El Novato
+        discordRoleId: '1514604027273416790', // 🌱 - 1 | El Novato
         systemRole: Role.EL_NOVATO,
-        name: '1 | El Novato'
+        name: '1 | El Novato',
+        isActive: true,
       },
-      // Legacy/Spezialrollen (falls noch im Discord vorhanden)
+      // Funktionsrollen
       {
-        discordRoleId: '1431388062474309697', // Inspector
+        discordRoleId: '1514604027273416787', // Routenverwaltung
         systemRole: Role.ROUTENVERWALTUNG,
-        name: 'Inspector'
+        name: 'Routenverwaltung',
+        isActive: true,
       },
       {
-        discordRoleId: '1431388062449139715', // Routenverwaltung
-        systemRole: Role.ROUTENVERWALTUNG,
-        name: 'Routenverwaltung'
-      },
-      {
-        discordRoleId: '1431388062449139716', // Sicario
+        discordRoleId: '1514604027265155198', // Sicario
         systemRole: Role.SICARIO,
-        name: 'Sicario'
-      }
+        name: 'Sicario',
+        isActive: true,
+      },
+      // Legacy: Inspector existiert auf dem aktuellen Discord-Server nicht mehr,
+      // bleibt als inaktives Mapping für historische Daten erhalten.
+      {
+        discordRoleId: '1431388062474309697', // Inspector (Legacy)
+        systemRole: Role.ROUTENVERWALTUNG,
+        name: 'Inspector',
+        isActive: false,
+      },
     ];
 
-    // Rollen-Mappings erstellen oder aktualisieren
     for (const mapping of roleMappings) {
       const existing = await prisma.discordRoleMapping.findUnique({
         where: { discordRoleId: mapping.discordRoleId }
       });
 
       if (existing) {
-        // Aktualisieren falls sich etwas geändert hat
         await prisma.discordRoleMapping.update({
           where: { discordRoleId: mapping.discordRoleId },
           data: {
             systemRole: mapping.systemRole,
             name: mapping.name,
-            isActive: true
+            isActive: mapping.isActive,
           }
         });
-        console.log(`✅ Mapping aktualisiert: ${mapping.name} (${mapping.discordRoleId}) -> ${mapping.systemRole}`);
+        console.log(`✅ Mapping aktualisiert: ${mapping.name} (${mapping.discordRoleId}) -> ${mapping.systemRole}${mapping.isActive ? '' : ' [inaktiv]'}`);
       } else {
-        // Neu erstellen
         await prisma.discordRoleMapping.create({
           data: {
             discordRoleId: mapping.discordRoleId,
             systemRole: mapping.systemRole,
             name: mapping.name,
-            isActive: true
+            isActive: mapping.isActive,
           }
         });
-        console.log(`✅ Mapping erstellt: ${mapping.name} (${mapping.discordRoleId}) -> ${mapping.systemRole}`);
+        console.log(`✅ Mapping erstellt: ${mapping.name} (${mapping.discordRoleId}) -> ${mapping.systemRole}${mapping.isActive ? '' : ' [inaktiv]'}`);
       }
     }
 
     console.log('🎉 Discord-Rollen-Mappings erfolgreich eingerichtet!');
-    
-    // Zusammenfassung anzeigen
+
     const allMappings = await prisma.discordRoleMapping.findMany({
       orderBy: {
         systemRole: 'asc'
@@ -137,7 +158,7 @@ async function setupDiscordRoles() {
 
     console.log('\n📋 Aktuelle Discord-Rollen-Mappings:');
     allMappings.forEach(mapping => {
-      console.log(`  • ${mapping.name} (${mapping.discordRoleId}) -> ${mapping.systemRole}`);
+      console.log(`  • ${mapping.name} (${mapping.discordRoleId}) -> ${mapping.systemRole}${mapping.isActive ? '' : ' [inaktiv]'}`);
     });
 
     console.log('\n🔒 Nur Benutzer mit diesen Discord-Rollen können sich anmelden!');
@@ -149,5 +170,4 @@ async function setupDiscordRoles() {
   }
 }
 
-// Script ausführen
 setupDiscordRoles();

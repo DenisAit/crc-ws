@@ -207,7 +207,7 @@ export class SicarioService {
           },
         ],
         footer: {
-          text: 'Sicario Division - La Santa Calavera',
+          text: 'Sicario Division - Reyes del Fuego',
         },
         timestamp: new Date().toISOString(),
       };

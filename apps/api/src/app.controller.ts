@@ -15,7 +15,7 @@ export class AppController {
     return {
       status: 'ok',
       timestamp: new Date().toISOString(),
-      service: 'LaSanta Calavera API',
+      service: 'Reyes del Fuego API',
     };
   }
 

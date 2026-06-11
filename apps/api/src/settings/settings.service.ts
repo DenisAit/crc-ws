@@ -80,8 +80,8 @@ export class SettingsService {
     return {
       codewort: String(codewort),
       enabled: Boolean(enabled),
-      // Hinweis: Kein Codewort mehr benötigt - nur sagen dass man zu La Santa Calavera gehört
-      hinweis: 'Kein Codewort mehr benötigt - einfach sagen, dass man zu La Santa Calavera gehört',
+      // Hinweis: Kein Codewort mehr benötigt - nur sagen dass man zu Reyes del Fuego gehört
+      hinweis: 'Kein Codewort mehr benötigt - einfach sagen, dass man zu Reyes del Fuego gehört',
     };
   }
 

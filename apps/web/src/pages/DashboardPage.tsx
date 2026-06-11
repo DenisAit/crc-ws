@@ -135,11 +135,11 @@ export default function DashboardPage() {
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500/30 to-amber-600/30 rounded-full blur-xl scale-125 pointer-events-none" />
               <img 
                 src="/logo.png" 
-                alt="La Santa Calavera" 
+                alt="Reyes del Fuego" 
                 className="relative h-14 w-14 object-contain drop-shadow-[0_0_15px_rgba(251,191,36,0.5)]"
               />
             </div>
-            <h1 className="text-4xl font-bold text-white">La Santa Calavera</h1>
+            <h1 className="text-4xl font-bold text-white">Reyes del Fuego</h1>
           </div>
           <p className="text-gray-400 text-lg max-w-2xl">
             Willkommen zurück, <span className="text-amber-400 font-medium">{user?.icFirstName || user?.username}</span>. 
@@ -272,12 +272,12 @@ export default function DashboardPage() {
           <div className="flex items-center gap-2">
             <img 
               src="/logo.png" 
-              alt="LSC" 
+              alt="RDF" 
               className="h-5 w-5 object-contain opacity-50"
             />
             <span>La Familia se cuida, Compadres!</span>
           </div>
-          <span>LSC Management System v2.0</span>
+          <span>RDF Management System v2.0</span>
         </CardContent>
       </Card>
     </div>

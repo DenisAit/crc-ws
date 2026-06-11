@@ -224,7 +224,7 @@ export class SanctionsService {
       }
 
       // Frontend URL aus Settings holen
-      let frontendUrl = process.env.FRONTEND_URL || 'https://lasanta.example.com';
+      let frontendUrl = process.env.FRONTEND_URL || 'https://rdf-nc.de';
       const sanctionLink = `${frontendUrl}/sanctions`;
 
       // Embed für Discord DM erstellen
@@ -255,7 +255,7 @@ export class SanctionsService {
           },
         ],
         footer: {
-          text: 'La Santa Calavera - Sanktionssystem',
+          text: 'Reyes del Fuego - Sanktionssystem',
         },
         timestamp: new Date().toISOString(),
       };

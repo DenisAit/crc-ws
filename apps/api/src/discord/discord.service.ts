@@ -1468,7 +1468,7 @@ export class DiscordService {
         ],
         timestamp: new Date().toISOString(),
         footer: {
-          text: 'LSC Partner-System',
+          text: 'RDF Partner-System',
         },
       };
 
@@ -1538,7 +1538,7 @@ export class DiscordService {
         ],
         timestamp: new Date().toISOString(),
         footer: {
-          text: 'LSC Partner-System • Vorschlag wartet auf Prüfung',
+          text: 'RDF Partner-System • Vorschlag wartet auf Prüfung',
         },
       };
 
@@ -1579,7 +1579,7 @@ export class DiscordService {
           ...(note ? [{ name: 'Notiz', value: note, inline: false }] : []),
         ],
         timestamp: new Date().toISOString(),
-        footer: { text: 'LSC Taxi-System' },
+        footer: { text: 'RDF Taxi-System' },
       };
 
       await fetch(webhookUrl, {
@@ -1609,7 +1609,7 @@ export class DiscordService {
           { name: 'Rolle', value: isTaxiLead ? 'Taxi-Leitung' : 'Taxi-Fahrer', inline: true },
         ],
         timestamp: new Date().toISOString(),
-        footer: { text: 'LSC Taxi-System' },
+        footer: { text: 'RDF Taxi-System' },
       };
 
       await fetch(webhookUrl, {
@@ -1643,7 +1643,7 @@ export class DiscordService {
           { name: 'Zugewiesen von', value: assignedByUsername, inline: true },
         ],
         timestamp: new Date().toISOString(),
-        footer: { text: 'LSC Taxi-System' },
+        footer: { text: 'RDF Taxi-System' },
       };
 
       await fetch(webhookUrl, {
@@ -1694,7 +1694,7 @@ export class DiscordService {
           { name: 'Status', value: `${statusLabels[oldStatus] || oldStatus} → ${statusLabels[newStatus] || newStatus}`, inline: false },
         ],
         timestamp: new Date().toISOString(),
-        footer: { text: 'LSC Taxi-System' },
+        footer: { text: 'RDF Taxi-System' },
       };
 
       await fetch(webhookUrl, {
@@ -1739,7 +1739,7 @@ export class DiscordService {
           { name: 'Erstellt von', value: creatorUsername, inline: true },
         ],
         timestamp: new Date().toISOString(),
-        footer: { text: 'LSC Tafelrunde-System' },
+        footer: { text: 'RDF Tafelrunde-System' },
       };
 
       await fetch(webhookUrl, {
@@ -1787,7 +1787,7 @@ export class DiscordService {
           { name: 'Aktualisiert von', value: updatedByUsername, inline: true },
         ],
         timestamp: new Date().toISOString(),
-        footer: { text: 'LSC Tafelrunde-System' },
+        footer: { text: 'RDF Tafelrunde-System' },
       };
 
       await fetch(webhookUrl, {

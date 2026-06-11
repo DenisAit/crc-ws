@@ -1,7 +1,7 @@
 {
   "name": "lasanta-calavera",
   "private": true,
-  "description": "LaSanta Calavera - GTA-RP Kartell Management System",
+  "description": "Reyes del Fuego - GTA-RP Kartell Management System",
   "scripts": {
     "dev": "pnpm --parallel dev",
     "build": "pnpm --recursive build",

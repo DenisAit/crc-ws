@@ -13,7 +13,7 @@ export default function BotschaftPage() {
           🌹 Ceremonia de Iniciación
         </h1>
         <p className="text-xl text-gray-300">
-          LaSanta Calavera
+          Reyes del Fuego
         </p>
       </div>
 
@@ -44,7 +44,7 @@ export default function BotschaftPage() {
           </p>
           <div className="p-4 bg-primary/10 border-l-4 border-primary rounded">
             <p className="text-gray-200 font-medium">
-              👉 Leitfrage: „Was hat dich zu den Toren der LaSanta Calavera gebracht? Warum gerade wir?"
+              👉 Leitfrage: „Was hat dich zu den Toren der Reyes del Fuego gebracht? Warum gerade wir?"
             </p>
           </div>
         </CardContent>
@@ -91,7 +91,7 @@ export default function BotschaftPage() {
         <CardContent className="space-y-4">
           <div className="prose prose-invert max-w-none">
             <p className="text-gray-200 text-lg font-semibold mb-4">
-              Das Leben im <span className="text-primary">LaSanta Calavera</span> …
+              Das Leben im <span className="text-primary">Reyes del Fuego</span> …
             </p>
             
             <p className="text-gray-300 leading-relaxed">
@@ -146,7 +146,7 @@ export default function BotschaftPage() {
               </p>
 
               <p className="font-bold text-primary text-lg my-4">
-                Dies ist LaSanta Calavera: Ein Name, der nicht vergeht. Eine Rose, die im Blut erblüht. 
+                Dies ist Reyes del Fuego: Ein Name, der nicht vergeht. Eine Rose, die im Blut erblüht. 
                 Ein Erbe, das stärker ist als der Tod.
               </p>
 
@@ -232,7 +232,7 @@ export default function BotschaftPage() {
             <p>Dein Blut nährt unsere Rose.</p>
             <p>Deine Treue stärkt unseren Stiel.</p>
             <p>Deine Präsenz schärft unseren Dorn.</p>
-            <p>Und die Rose des <strong className="text-primary">LaSanta Calavera</strong> wird durch dich weiterblühen.</p>
+            <p>Und die Rose der <strong className="text-primary">Reyes del Fuego</strong> wird durch dich weiterblühen.</p>
           </div>
         </CardContent>
       </Card>
@@ -243,7 +243,7 @@ export default function BotschaftPage() {
           <div className="text-center space-y-3">
             <Flower2 className="h-12 w-12 text-primary mx-auto" />
             <p className="text-2xl font-bold text-primary">
-              🌹 LaSanta Calavera – La Hermandad es para siempre 🌹
+              🌹 Reyes del Fuego – La Hermandad es para siempre 🌹
             </p>
           </div>
         </CardContent>

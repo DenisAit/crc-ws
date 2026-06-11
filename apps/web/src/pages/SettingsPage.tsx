@@ -690,7 +690,7 @@ export default function SettingsPage() {
               Xiao Motors
             </CardTitle>
             <CardDescription className="text-gray-400">
-              Konfiguriere das Codewort für Xiao Motors (oder leer lassen für "La Santa Calavera")
+              Konfiguriere das Codewort für Xiao Motors (oder leer lassen für "Reyes del Fuego")
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -706,14 +706,14 @@ export default function SettingsPage() {
                   className="bg-gray-700 border-gray-600 text-white"
                 />
                 <p className="text-xs text-gray-500">
-                  Wenn leer: "Einfach sagen, dass man zu La Santa Calavera gehört"
+                  Wenn leer: "Einfach sagen, dass man zu Reyes del Fuego gehört"
                 </p>
               </div>
               
               {!xiaoMotorsCodewort && xiaoMotorsSettings?.codewort === '' && (
                 <div className="p-3 bg-green-900/20 border border-green-500/30 rounded-lg">
                   <p className="text-green-400 text-sm">
-                    ✅ Aktuell kein Codewort - Mitglieder sagen einfach, dass sie zu La Santa Calavera gehören.
+                    ✅ Aktuell kein Codewort - Mitglieder sagen einfach, dass sie zu Reyes del Fuego gehören.
                   </p>
                 </div>
               )}
@@ -772,7 +772,7 @@ export default function SettingsPage() {
             
             <div className="text-center p-4 bg-gray-800/50 rounded-lg">
               <div className="text-2xl font-bold text-accent">💀</div>
-              <div className="text-sm text-gray-400">LaSanta Calavera</div>
+              <div className="text-sm text-gray-400">Reyes del Fuego</div>
             </div>
           </div>
         </CardContent>

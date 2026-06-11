@@ -3,7 +3,7 @@ import { PrismaService } from '../prisma/prisma.service';
 
 // Discord-Rolle ID für komplett ausgeschlossene Mitglieder (z.B. inaktiv, gesperrt)
 // Diese User werden von ALLEN Listen und Systemen ausgeschlossen
-export const EXCLUDED_DISCORD_ROLE_ID = '1460767399568736499';
+export const EXCLUDED_DISCORD_ROLE_ID = '1514604027256635463';
 
 @Injectable()
 export class ExclusionService {

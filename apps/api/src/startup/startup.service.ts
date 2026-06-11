@@ -8,7 +8,7 @@ export class StartupService implements OnModuleInit {
   constructor(private discordService: DiscordService) {}
 
   async onModuleInit() {
-    this.logger.log('🚀 Starting up LaSanta Calavera API...');
+    this.logger.log('🚀 Starting up Reyes del Fuego API...');
     
     try {
       // Index all Discord users on startup

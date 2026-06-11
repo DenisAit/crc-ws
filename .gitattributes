@@ -1,0 +1,14 @@
+# Shell-Scripts müssen unter Linux mit LF-Zeilenenden auschecken,
+# sonst bricht /usr/bin/env bash auf dem VPS.
+*.sh           text eol=lf
+*.bash         text eol=lf
+
+# Dockerfiles + nginx.conf ebenfalls LF (laufen im Linux-Container)
+Dockerfile     text eol=lf
+*.Dockerfile   text eol=lf
+Dockerfile.*   text eol=lf
+nginx.conf     text eol=lf
+*.nginx        text eol=lf
+
+# Standard für Projekt-Code: native Auflösung lassen
+*              text=auto

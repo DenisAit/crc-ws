@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initImageModal();
     initGallery();
     
-    console.log('%c☠ La Santa Calavera ☠', 'font-size: 24px; color: #D4AF37; font-weight: bold; text-shadow: 0 0 10px #D4AF37;');
+    console.log('%c☠ Reyes del Fuego ☠', 'font-size: 24px; color: #D4AF37; font-weight: bold; text-shadow: 0 0 10px #D4AF37;');
     console.log('%cDesde las Sombras', 'font-size: 14px; color: #B8B8B8; font-style: italic;');
 });
 
@@ -509,9 +509,9 @@ window.negocioGalleries = {
 // === VISIBILITY CHANGE ===
 document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
-        document.title = '¡Vuelve pronto! | La Santa Calavera';
+        document.title = '¡Vuelve pronto! | Reyes del Fuego';
     } else {
-        document.title = 'La Santa Calavera | Desde las Sombras';
+        document.title = 'Reyes del Fuego | Desde las Llamas';
     }
 });
 

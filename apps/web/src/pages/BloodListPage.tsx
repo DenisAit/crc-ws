@@ -292,7 +292,7 @@ export default function BloodListPage() {
             <div>
               <h1 className="text-3xl font-bold text-white">Blood List</h1>
               <p className="text-gray-400 mt-1">
-                La Santa Calavera Family • Mitgliederverwaltung
+                Reyes del Fuego Family • Mitgliederverwaltung
               </p>
             </div>
           </div>

@@ -426,14 +426,14 @@ export default function Layout({ children }: LayoutProps) {
             <div className="relative w-14 h-14 flex items-center justify-center">
               <img 
                 src="/logo.png" 
-                alt="La Santa Calavera" 
+                alt="Reyes del Fuego" 
                 className="w-full h-full object-contain drop-shadow-[0_0_12px_rgba(251,191,36,0.5)] group-hover:drop-shadow-[0_0_20px_rgba(251,191,36,0.7)] transition-all duration-300 group-hover:scale-105"
               />
             </div>
           </div>
           <div>
-            <h1 className="text-lg font-bold text-white tracking-tight">La Santa</h1>
-            <p className="text-xs text-amber-400/80 font-medium -mt-0.5">Calavera</p>
+            <h1 className="text-lg font-bold text-white tracking-tight">Reyes del</h1>
+            <p className="text-xs text-amber-400/80 font-medium -mt-0.5">Fuego</p>
             {isPartnerUser && (
               <span className="inline-flex px-1.5 py-0.5 mt-1 rounded text-[9px] font-medium bg-gray-700/50 text-gray-400 border border-gray-600/30">
                 Partner-Zugang
@@ -587,10 +587,10 @@ export default function Layout({ children }: LayoutProps) {
             <Link to="/app" className="flex items-center gap-2">
               <img 
                 src="/logo.png" 
-                alt="La Santa Calavera" 
+                alt="Reyes del Fuego" 
                 className="h-9 w-9 object-contain drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]"
               />
-              <span className="font-bold text-white">La Santa Calavera</span>
+              <span className="font-bold text-white">Reyes del Fuego</span>
             </Link>
           </div>
 

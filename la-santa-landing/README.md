@@ -1,6 +1,6 @@
-# La Santa - Landing Page Konzept (Enhanced Version)
+# Reyes del Fuego - Landing Page Konzept (Enhanced Version)
 
-Eine **massiv erweiterte**, elegante und dramatische Webseite im Dunkel/Gold Design als Premium-Konzept für die Kartell-Präsentation von **La Santa**.
+Eine **massiv erweiterte**, elegante und dramatische Webseite im Dunkel/Gold Design als Premium-Konzept für die Kartell-Präsentation von **Reyes del Fuego**.
 
 ## 🎨 Design
 
@@ -12,7 +12,7 @@ Eine **massiv erweiterte**, elegante und dramatische Webseite im Dunkel/Gold Des
 ## ✨ Features im Überblick
 
 ### 📖 **Dramatische Geschichte (5 Kapitel)**
-Die komplette Historie von La Santa:
+Die komplette Historie der Reyes del Fuego:
 
 1. **Die Tage unter Banderas** (Februar - Juli 2025)
    - 5 Monate unter Fernando Banderas als "Cartel Renacido"
@@ -28,7 +28,7 @@ Die komplette Historie von La Santa:
 3. **Die Entscheidung - El Momento de Verdad** (Ende Juli 2025)
    - Gideon Russell erhebt sich
    - Der Pakt der 25 Hermanos
-   - Geburt des Namens "La Santa"
+   - Geburt des Namens "Reyes del Fuego"
 
 4. **La Resurrección - Die Wiedergeburt** (August 2025)
    - Neue Führungsstruktur etabliert
@@ -38,7 +38,7 @@ Die komplette Historie von La Santa:
 5. **El Ascenso - Der Aufstieg** (August 2025 - Heute)
    - 9 Monate Wachstum
    - 16 digitale Systeme
-   - Casa de La Santa gefunden
+   - Casa de los Reyes gefunden
    - Vom Chaos zur Ordnung
 
 ### 💎 **Valores (8 Werte)**
@@ -351,7 +351,7 @@ la-santa-landing/
 | **Februar - Juli 2025** | 5 Monate Aufbau, Strukturen, Territorien | ❌ Unter Banderas |
 | **Juli 2025** | Der Verrat - Fernando verschwindet | 🔴 Die Nacht |
 | **Ende Juli 2025** | Die Entscheidung - 25 Hermanos vereinen sich | ⚡ Wendepunkt |
-| **August 2025** | Wiedergeburt als "La Santa" | ✨ Neuanfang |
+| **August 2025** | Wiedergeburt als "Reyes del Fuego" | ✨ Neuanfang |
 | **August - Heute** | 9 Monate Aufstieg, 16 Systeme, 25 Hermanos | 🏆 Gegenwart |
 
 ### **Schlüsselpersonen**
@@ -363,7 +363,7 @@ la-santa-landing/
 
 2. **Gideon Russell** (El Patrón)
    - Erhob sich aus dem Verrat
-   - Gründer von "La Santa"
+   - Gründer von "Reyes del Fuego"
    - Führt durch Vision, nicht Tyrannei
 
 3. **Jones Banderas** (Don Capitán)
@@ -492,7 +492,7 @@ service apache2 restart
 docker build -t la-santa-landing:v2 .
 
 # Container starten
-docker run -d -p 8080:80 --name la-santa la-santa-landing:v2
+docker run -d -p 8080:80 --name reyes-del-fuego la-santa-landing:v2
 ```
 
 ### **Docker Compose (Beste Option)**
@@ -548,13 +548,13 @@ docker-compose logs -f
 
 ## 🎉 Credits
 
-**Design & Entwicklung**: Basierend auf den Daten und der Geschichte von La Santa  
+**Design & Entwicklung**: Basierend auf den Daten und der Geschichte der Reyes del Fuego  
 **Inspiration**: Kolumbianische Kartell-Ästhetik, moderne Web-Design-Trends  
 **Technologien**: HTML5, CSS3, Vanilla JavaScript, Docker, Nginx  
 
 ---
 
-**La Santa** - *Desde las Sombras*
+**Reyes del Fuego** - *Desde las Llamas*
 
 *Geboren aus Verrat. Geschmiedet durch Loyalität. Vereint durch Blut. Ewig durch Ehre.*
 

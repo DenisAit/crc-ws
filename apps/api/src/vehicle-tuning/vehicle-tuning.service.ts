@@ -12,7 +12,7 @@ export class VehicleTuningService {
     return {
       workshop: {
         name: 'Xiao Motors',
-        // Kein Codewort mehr benötigt - einfach sagen dass man zu La Santa Calavera gehört
+        // Kein Codewort mehr benötigt - einfach sagen dass man zu Reyes del Fuego gehört
         codeword: xiaoSettings.codewort || null,
         hinweis: xiaoSettings.hinweis,
         enabled: xiaoSettings.enabled,

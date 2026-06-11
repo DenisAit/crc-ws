@@ -463,7 +463,7 @@ model Sanction {
   level       Int              @default(1) // 1-4, Level bestimmt Strafe
   description String
   amount      Int? // Geldstrafe in Schwarzgeld
-  penalty     String? // Spezielle Strafe (z.B. "LaSanta Calavera Brücke 1x")
+  penalty     String? // Spezielle Strafe (z.B. "Reyes del Fuego Brücke 1x")
   status      SanctionStatus   @default(ACTIVE)
   createdById String
   createdBy   User             @relation("sanction_created_by", fields: [createdById], references: [id])

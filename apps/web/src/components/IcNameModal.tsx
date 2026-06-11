@@ -59,7 +59,7 @@ export default function IcNameModal({ isOpen, onClose, username }: IcNameModalPr
             <User className="h-16 w-16 text-primary" />
           </div>
           <CardTitle className="text-2xl font-bold text-white">
-            Willkommen bei LaSanta Calavera!
+            Willkommen bei Reyes del Fuego!
           </CardTitle>
           <CardDescription className="text-gray-400">
             Hallo <span className="text-accent">{username}</span>!<br/>

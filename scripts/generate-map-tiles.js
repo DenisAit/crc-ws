@@ -200,7 +200,7 @@ async function generateMapTiles(mapConfig) {
  */
 async function main() {
   console.log('═══════════════════════════════════════════════════════');
-  console.log('  🗺️  Map Tile Generator - La Santa Calavera');
+  console.log('  🗺️  Map Tile Generator - Reyes del Fuego');
   console.log('═══════════════════════════════════════════════════════');
 
   // Prüfe ob Source-Verzeichnis existiert

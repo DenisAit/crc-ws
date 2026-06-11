@@ -80,7 +80,7 @@ export default function VehicleTuningPage() {
                     <span className="text-green-300 font-medium">Kein Codewort benötigt</span>
                   </div>
                   <p className="text-green-200/70 text-sm mt-1">
-                    Einfach sagen, dass du zu <span className="font-semibold">La Santa Calavera</span> gehörst.
+                    Einfach sagen, dass du zu <span className="font-semibold">Reyes del Fuego</span> gehörst.
                   </p>
                 </div>
               )}

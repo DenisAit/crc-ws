@@ -21,8 +21,8 @@ async function bootstrap() {
       configService.get('FRONTEND_URL', 'http://localhost:5173'),
       'http://185.237.14.61',
       'http://185.237.14.61:3000',
-      'https://lsc-nc.de',
-      'https://lsc-nc.de:3000'
+      'https://rdf-nc.de',
+      'https://rdf-nc.de:3000'
     ],
     credentials: true,
   });
@@ -46,7 +46,7 @@ async function bootstrap() {
   const host = configService.get('HOST', '0.0.0.0');
   await app.listen(port, host);
   
-  console.log(`🚀 LaSanta Calavera API running on: http://${host}:${port}/api`);
+  console.log(`🚀 Reyes del Fuego API running on: http://${host}:${port}/api`);
 }
 
 bootstrap();

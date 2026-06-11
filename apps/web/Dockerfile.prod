@@ -40,7 +40,7 @@ RUN echo "=== Dist directory contents ===" && ls -la dist/ || echo "Dist directo
 RUN echo "=== Creating Service Worker ===" && \
     mkdir -p dist && \
     cat > dist/sw.js <<'EOF'
-// Service Worker für LaSanta Calavera
+// Service Worker für Reyes del Fuego
 // Handles app updates and cache management
 
 const CACHE_NAME = 'lascanta-v1'

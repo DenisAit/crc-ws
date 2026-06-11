@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# La Santa Landing Page - Start Script
+# Reyes del Fuego Landing Page - Start Script
 # =====================================
 
 echo "╔═══════════════════════════════════════════════════════╗"
@@ -95,7 +95,7 @@ esac
 
 echo "════════════════════════════════════════════════════════"
 echo ""
-echo "  La Santa - Desde las Sombras"
+echo "  Reyes del Fuego - Desde las Llamas"
 echo ""
 echo "════════════════════════════════════════════════════════"
 

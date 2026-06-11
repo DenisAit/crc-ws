@@ -46,7 +46,7 @@ export default function DiscordErrorPage() {
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-3 mb-4">
             <Shield className="h-12 w-12 text-gold-500" />
-            <h1 className="text-4xl font-bold text-white">LaSanta Calavera</h1>
+            <h1 className="text-4xl font-bold text-white">Reyes del Fuego</h1>
           </div>
         </div>
 
@@ -74,7 +74,7 @@ export default function DiscordErrorPage() {
                   <div>
                     <h3 className="font-semibold text-white mb-1">Nicht im Discord</h3>
                     <p className="text-sm text-gray-400">
-                      Du bist nicht Mitglied des LaSanta Calavera Discord-Servers
+                      Du bist nicht Mitglied des Reyes del Fuego Discord-Servers
                     </p>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ export default function DiscordErrorPage() {
                 Was kannst du tun?
               </h3>
               <ol className="space-y-2 text-sm text-gray-300 list-decimal list-inside">
-                <li>Trete dem <strong className="text-white">LaSanta Calavera Discord-Server</strong> bei</li>
+                <li>Trete dem <strong className="text-white">Reyes del Fuego Discord-Server</strong> bei</li>
                 <li>Wende dich an die <strong className="text-gold-400">Leaderschaft</strong> (El Patron, Don oder Asesor)</li>
                 <li>Warte bis dir eine <strong className="text-white">Rolle zugewiesen</strong> wurde</li>
                 <li>Versuche dich dann <strong className="text-white">erneut anzumelden</strong></li>
@@ -137,7 +137,7 @@ export default function DiscordErrorPage() {
         {/* Footer */}
         <div className="text-center text-gray-500 text-sm">
           <p>Bei Fragen wende dich an die Family-Leaderschaft</p>
-          <p className="mt-1">LaSanta Calavera © 2025</p>
+          <p className="mt-1">Reyes del Fuego © 2025</p>
         </div>
       </div>
     </div>

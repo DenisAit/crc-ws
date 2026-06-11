@@ -33,7 +33,7 @@ async function makeAdmin() {
     console.log(`   Discord ID: ${updatedUser.discordId}`);
     console.log(`   Rolle: ${updatedUser.role}`);
     console.log('');
-    console.log('💀 Viva La Santa Calavera! 💀');
+    console.log('💀 Viva Reyes del Fuego! 💀');
 
   } catch (error) {
     console.error('❌ Fehler beim Aktualisieren der Rolle:', error);

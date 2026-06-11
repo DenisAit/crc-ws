@@ -1,4 +1,4 @@
-# La Santa Landing Page - Production
+# Reyes del Fuego Landing Page - Production
 FROM nginx:alpine
 
 # Install gzip for compression

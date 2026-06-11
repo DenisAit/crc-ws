@@ -110,7 +110,7 @@ export default function CasaPage() {
             <p className="text-gray-300 leading-relaxed">
               An der Senora Road in den Vinewood Hills liegt unser Anwesen – La Fuente Blanca, der weiße Brunnen. 
               Ein legendärer Ort, der einst Organizazia als Hauptquartier diente. Heute gehört er uns – 
-              La Santa Calavera.
+              Reyes del Fuego.
             </p>
             <p className="text-gray-300 leading-relaxed flex items-start gap-2">
               <Shield className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
@@ -123,7 +123,7 @@ export default function CasaPage() {
             <p className="text-gray-300 leading-relaxed flex items-start gap-2">
               <Key className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
               <span>
-                Der Besprechungs-Circulo mit dem eingebrannten Calavera-Logo ist der Ort, an dem Entscheidungen 
+                Der Besprechungs-Circulo mit dem eingebrannten RDF-Logo ist der Ort, an dem Entscheidungen 
                 getroffen werden. Die überdachte Outdoor-Bar lädt zu Verhandlungen bei einem kühlen Drink ein. 
                 Im eleganten Wohnzimmer werden Geschäfte besiegelt und Allianzen geschmiedet.
               </span>
@@ -284,7 +284,7 @@ export default function CasaPage() {
                     </div>
                     <div className="flex items-start gap-2">
                       <span className="text-gray-400">Text:</span>
-                      <span className="text-white font-bold text-lg">LSC</span>
+                      <span className="text-white font-bold text-lg">RDF</span>
                     </div>
                   </div>
                 </div>
@@ -293,7 +293,7 @@ export default function CasaPage() {
             <div className="p-3 bg-amber-900/20 border border-amber-700/50 rounded-lg flex items-start gap-2">
               <Info className="h-5 w-5 text-amber-400 mt-0.5 flex-shrink-0" />
               <p className="text-sm text-amber-200">
-                Falls die Graffitis oder Sprays entfernt wurden, bitte auf der rechten Seite des Tores mit dem Kürzel <strong>"LSC"</strong> in der Farbe <strong>#cfb997</strong> und der dritten Schrift neu sprayen.
+                Falls die Graffitis oder Sprays entfernt wurden, bitte auf der rechten Seite des Tores mit dem Kürzel <strong>"RDF"</strong> in der Farbe <strong>#cfb997</strong> und der dritten Schrift neu sprayen.
               </p>
             </div>
           </div>

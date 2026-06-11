@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# La Santa Landing Page - Simple Start (ohne Docker)
+# Reyes del Fuego Landing Page - Simple Start (ohne Docker)
 # ====================================================
 
 echo "╔═══════════════════════════════════════════════════════╗"

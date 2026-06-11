@@ -1,5 +1,5 @@
 @echo off
-REM La Santa Landing Page - Start Script (Windows)
+REM Reyes del Fuego Landing Page - Start Script (Windows)
 REM ===============================================
 
 echo.
@@ -100,7 +100,7 @@ if "%choice%"=="1" (
 
 echo ======================================================
 echo.
-echo   La Santa - Desde las Sombras
+echo   Reyes del Fuego - Desde las Llamas
 echo.
 echo ======================================================
 echo.

@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-echo "🚀 Starting LaSanta Calavera API..."
+echo "🚀 Starting Reyes del Fuego API..."
 
 # Warte auf Datenbank-Verbindung
 echo "⏳ Waiting for database connection..."
