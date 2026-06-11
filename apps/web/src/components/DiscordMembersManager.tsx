@@ -100,7 +100,7 @@ export default function DiscordMembersManager() {
 
   const getRoleDisplayName = (role: string) => {
     switch (role) {
-      case 'EL_PATRON': return 'El Patron'
+      case 'EL_PATRON': return 'La Patrona'
       case 'DON': return 'Don'
       case 'ASESOR': return 'Asesor'
       case 'LOGISTICA': return 'Logistica'

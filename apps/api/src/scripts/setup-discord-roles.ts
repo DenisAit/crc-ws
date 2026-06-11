@@ -17,9 +17,9 @@ async function setupDiscordRoles() {
       },
       // Leaderschaft
       {
-        discordRoleId: '1514604027281674299', // 👑 - El Patrón
+        discordRoleId: '1514604027281674299', // 👑 - La Patrona (Discord-Rolle ggf. noch "El Patrón")
         systemRole: Role.EL_PATRON,
-        name: 'El Patrón',
+        name: 'La Patrona',
         isActive: true,
       },
       {

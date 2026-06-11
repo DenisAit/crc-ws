@@ -1048,10 +1048,10 @@ export default function PartnerManagementPage() {
               <div className="text-sm text-gray-300">
                 <p className="font-medium text-blue-400 mb-1">Hinweis zu Berechtigungen</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-400">
-                  <li>Leadership (El Patron, Don Capitán, Don Comandante, El Mano Derecha) hat automatisch Zugriff</li>
+                  <li>Leadership (La Patrona, Don Capitán, Don Comandante, El Mano Derecha) hat automatisch Zugriff</li>
                   <li>Berechtigte Mitglieder können Partner-Anfragen annehmen/ablehnen</li>
                   <li>Berechtigte Mitglieder können Partner-Vorschläge prüfen</li>
-                  <li>Nur El Patron kann diese Berechtigungen vergeben</li>
+                  <li>Nur La Patrona kann diese Berechtigungen vergeben</li>
                 </ul>
               </div>
             </div>

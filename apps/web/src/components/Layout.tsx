@@ -431,9 +431,10 @@ export default function Layout({ children }: LayoutProps) {
               />
             </div>
           </div>
-          <div>
-            <h1 className="text-lg font-bold text-white tracking-tight">Reyes del</h1>
-            <p className="text-xs text-amber-400/80 font-medium -mt-0.5">Fuego</p>
+          <div className="min-w-0">
+            <h1 className="text-lg font-bold text-white tracking-tight whitespace-nowrap">
+              Reyes del <span className="text-amber-400">Fuego</span>
+            </h1>
             {isPartnerUser && (
               <span className="inline-flex px-1.5 py-0.5 mt-1 rounded text-[9px] font-medium bg-gray-700/50 text-gray-400 border border-gray-600/30">
                 Partner-Zugang

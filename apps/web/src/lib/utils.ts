@@ -70,7 +70,7 @@ export function getRoleColor(role: string) {
 export function getRoleDisplayName(role: string) {
   switch (role) {
     case 'EL_PATRON':
-      return 'El Patrón'
+      return 'La Patrona'
     case 'DON':
       return 'Don'
     case 'ASESOR':
