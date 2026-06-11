@@ -1,20 +1,21 @@
 services:
-  # PostgreSQL Database
+  # MariaDB (MySQL-kompatibel)
   db:
-    image: postgres:15-alpine
+    image: mariadb:11
     container_name: lasanta-db
     restart: unless-stopped
     environment:
-      POSTGRES_USER: lasanta
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: lasanta_db
+      MARIADB_ROOT_PASSWORD: password
+      MARIADB_DATABASE: lasanta_db
+      MARIADB_USER: lasanta
+      MARIADB_PASSWORD: password
     ports:
-      - "5432:5432"
+      - "3306:3306"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
-      - ./backups:/backups  # Für Datenbank-Backups
+      - mariadb_data:/var/lib/mysql
+      - ./backups:/backups
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U lasanta -d lasanta_db"]
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -33,7 +34,7 @@ services:
       - 8.8.4.4
       - 1.1.1.1
     environment:
-      DATABASE_URL: "postgresql://lasanta:password@db:5432/lasanta_db?schema=public"
+      DATABASE_URL: "mysql://lasanta:password@db:3306/lasanta_db"
       NODE_ENV: development
       HOST: "0.0.0.0"
       PORT: 3000
@@ -74,7 +75,7 @@ services:
       - api
 
 volumes:
-  postgres_data:
+  mariadb_data:
     driver: local
   api_uploads:
     driver: local
