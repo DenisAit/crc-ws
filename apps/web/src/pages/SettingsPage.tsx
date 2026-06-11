@@ -27,7 +27,7 @@ import DiscordMembersManager from '../components/DiscordMembersManager'
 
 const getRoleDisplayName = (role: string) => {
   switch (role) {
-    case 'EL_PATRON': return 'El Patrón'
+    case 'EL_PATRON': return 'La Patrona'
     case 'DON': return 'Don'
     case 'ASESOR': return 'Asesor'
     case 'ROUTENVERWALTUNG': return 'Routenverwaltung'
@@ -154,12 +154,12 @@ export default function SettingsPage() {
     mutationFn: (discordId: string) =>
       api.post('/users/make-admin', { discordId }),
     onSuccess: () => {
-      toast.success('Benutzer wurde zum El Patrón ernannt')
+      toast.success('Benutzer wurde zur Patrona ernannt')
       queryClient.invalidateQueries({ queryKey: ['users'] })
       setNewAdminDiscordId('')
     },
     onError: (error: any) => {
-      toast.error(error.response?.data?.message || 'Fehler beim Ernennen des El Patrón')
+      toast.error(error.response?.data?.message || 'Fehler beim Ernennen zur Patrona')
     },
   })
 
@@ -600,7 +600,7 @@ export default function SettingsPage() {
               Blood In Discord Rollen
             </CardTitle>
             <CardDescription className="text-gray-400">
-              Diese Discord Rollen werden automatisch bei einem Blood In zugewiesen (nur El Patrón)
+              Diese Discord Rollen werden automatisch bei einem Blood In zugewiesen (nur La Patrona)
             </CardDescription>
           </CardHeader>
           <CardContent>

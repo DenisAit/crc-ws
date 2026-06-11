@@ -672,7 +672,7 @@ export default function TafelrundePage() {
               <div className="text-sm text-gray-300">
                 <p className="font-medium text-blue-400 mb-1">Hinweis zu Berechtigungen</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-400">
-                  <li>Leadership (Patron, Don, Asesor) hat automatisch Zugriff</li>
+                  <li>Leadership (La Patrona, Don, El Mano Derecha) hat automatisch Zugriff</li>
                   <li>Berechtigte Mitglieder können Tafelrunden erstellen und verwalten</li>
                   <li>Partner können nur den Anwesenheitsstatus von Familien ändern</li>
                   <li>Alle Aktionen werden im Audit-Log protokolliert</li>

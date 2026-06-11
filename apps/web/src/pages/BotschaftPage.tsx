@@ -109,7 +109,7 @@ export default function BotschaftPage() {
               </li>
               <li className="flex items-start gap-2 text-gray-300">
                 <Sword className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <span>Der <strong>Patrón</strong> ist der Dorn – scharf, wachsam, der Schutz gegen jede Gefahr.</span>
+                <span>Die <strong>Patrona</strong> ist der Dorn – scharf, wachsam, der Schutz gegen jede Gefahr.</span>
               </li>
             </ul>
 
@@ -169,7 +169,7 @@ export default function BotschaftPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span>Bist du bereit, der Führung zu folgen und dem Patrón zu dienen – mit allem, was du bist?</span>
+                  <span>Bist du bereit, der Führung zu folgen und der Patrona zu dienen – mit allem, was du bist?</span>
                 </li>
               </ul>
             </div>

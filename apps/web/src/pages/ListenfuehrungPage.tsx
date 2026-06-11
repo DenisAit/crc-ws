@@ -581,7 +581,7 @@ export default function ListenfuehrungPage() {
                       <div className="p-3 bg-amber-500/5 rounded-lg border border-amber-500/20">
                         <div className="flex items-center gap-2 text-xs text-amber-400 mb-1">
                           <Crown className="h-3 w-3" />
-                          <span>Führung / Patron</span>
+                          <span>Führung / Patrona</span>
                         </div>
                         <p className="text-amber-200 text-sm">{contact.leadershipInfo}</p>
                       </div>
@@ -971,7 +971,7 @@ export default function ListenfuehrungPage() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <Crown className="h-4 w-4 text-amber-400" />
-                    <Label className="text-gray-300">Kontaktdaten Patron / Führung</Label>
+                    <Label className="text-gray-300">Kontaktdaten Patrona / Führung</Label>
                   </div>
                   <Input
                     placeholder="Name oder Telefonnummer der Führung"

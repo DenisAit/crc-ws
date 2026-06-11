@@ -141,7 +141,7 @@ export default function UserManagementPage() {
             <Crown className="h-16 w-16 text-red-500 mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-white mb-2">Zugriff verweigert</h2>
             <p className="text-gray-400">
-              Nur El Patrón kann die Benutzerverwaltung zugreifen.
+              Nur La Patrona kann die Benutzerverwaltung verwenden.
             </p>
           </CardContent>
         </Card>

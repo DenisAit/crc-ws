@@ -45,7 +45,7 @@ interface LayoutProps {
 
 const getRoleDisplayName = (role: string) => {
   const roleMap: Record<string, string> = {
-    'EL_PATRON': 'El Patrón',
+    'EL_PATRON': 'La Patrona',
     'DON_CAPITAN': 'Don Capitán',
     'DON_COMANDANTE': 'Don Comandante',
     'EL_MANO_DERECHA': 'Mano Derecha',
@@ -431,10 +431,13 @@ export default function Layout({ children }: LayoutProps) {
               />
             </div>
           </div>
-          <div className="min-w-0">
-            <h1 className="text-lg font-bold text-white tracking-tight whitespace-nowrap">
-              Reyes del <span className="text-amber-400">Fuego</span>
+          <div className="min-w-0 leading-tight">
+            <h1 className="text-base font-bold tracking-wide whitespace-nowrap bg-gradient-to-r from-amber-200 via-amber-400 to-orange-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(251,146,60,0.35)]">
+              Reyes del Fuego
             </h1>
+            <p className="text-[10px] text-amber-300/50 font-medium tracking-[0.28em] uppercase mt-0.5">
+              Könige&nbsp;des&nbsp;Feuers
+            </p>
             {isPartnerUser && (
               <span className="inline-flex px-1.5 py-0.5 mt-1 rounded text-[9px] font-medium bg-gray-700/50 text-gray-400 border border-gray-600/30">
                 Partner-Zugang
@@ -591,7 +594,7 @@ export default function Layout({ children }: LayoutProps) {
                 alt="Reyes del Fuego" 
                 className="h-9 w-9 object-contain drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]"
               />
-              <span className="font-bold text-white">Reyes del Fuego</span>
+              <span className="font-bold tracking-wide bg-gradient-to-r from-amber-200 via-amber-400 to-orange-500 bg-clip-text text-transparent">Reyes del Fuego</span>
             </Link>
           </div>
 

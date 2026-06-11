@@ -78,16 +78,16 @@ type RoleAssignments = Record<string, AssignedMember[]>
 const overviewSections: OverviewSection[] = [
   {
     id: 'patron',
-    title: '⚜️ Patrón / Jefe Supremo',
+    title: '⚜️ La Patrona / Jefa Suprema',
     description:
-      'La cabeza. El alma. Der Boss. Der Patrón redet selten, aber wenn er es tut, dann ist es Gesetz.',
+      'La cabeza. El alma. Die Bossin. La Patrona redet selten, aber wenn sie es tut, dann ist es Gesetz.',
     responsibilities: [
       'Setzt die Richtung – visión y estrategia.',
       'Entscheidet, wer lebt, wer fällt, wer aufsteigt.',
       'Behält alles im Blick, mischt sich nur ein, wenn es brennt.',
     ],
     dailyDuties: [
-      'Besprechungen mit seinen Onces, letzte Worte bei Deals.',
+      'Besprechungen mit ihren Onces, letzte Worte bei Deals.',
       'Hört sich Berichte an und entscheidet, was passiert.',
       'Gibt Richtung vor – sin rodeos.',
     ],
@@ -96,15 +96,15 @@ const overviewSections: OverviewSection[] = [
     id: 'los-onces',
     title: '⚔️ Los Onces – El Capitán & El Comandante',
     description:
-      'Die beiden Ersten unter dem Patrón. Sie sind direkt ihm unterstellt und steuern Operationen & Sicherheit.',
+      'Die beiden Ersten unter der Patrona. Sie sind direkt ihr unterstellt und steuern Operationen & Sicherheit.',
     responsibilities: [
       'Operaciones & Seguridad – die beiden Säulen des Geschäfts.',
       'Befehlsgewalt über alle Bereiche unterhalb.',
-      'Entscheidungen, die das Ganze bewegen – direkt vom Patrón abgesegnet.',
+      'Entscheidungen, die das Ganze bewegen – direkt von der Patrona abgesegnet.',
     ],
     dailyDuties: [
       'Koordinieren ihre Bereiche, halten das System stabil.',
-      'Melden direkt an den Patrón, ohne Filter.',
+      'Melden direkt an die Patrona, ohne Filter.',
       'Greifen ein, wenn etwas aus dem Ruder läuft.',
     ],
     subSections: [
@@ -119,7 +119,7 @@ const overviewSections: OverviewSection[] = [
         dailyDuties: [
           'Checkt Routen, segnet Transporte ab.',
           'Schiebt Projekte an – sin errores.',
-          'Berichtet direkt an den Patrón.',
+          'Berichtet direkt an die Patrona.',
         ],
       },
       {
@@ -128,7 +128,7 @@ const overviewSections: OverviewSection[] = [
         responsibilities: [
           'Führt Sicarios, plant Sicherheitsmaßnahmen.',
           'Macht Gegenspionage, sorgt für Ruhe im Territorio.',
-          'Schützt Patrón, Familia und Lieferungen.',
+          'Schützt die Patrona, Familia und Lieferungen.',
         ],
         dailyDuties: [
           'Trainiert Sicarios, analysiert Bewegungen.',
@@ -142,7 +142,7 @@ const overviewSections: OverviewSection[] = [
     id: 'mano-derecha',
     title: '🕴️ El Mano Derecha – Coordinador',
     description:
-      'La voz del Patrón. Er redet, wenn der Boss schweigt. Sorgt dafür, dass alle Rädchen ineinandergreifen – steht aber unter den Onces.',
+      'La voz de la Patrona. Er redet, wenn die Bossin schweigt. Sorgt dafür, dass alle Rädchen ineinandergreifen – steht aber unter den Onces.',
     responsibilities: [
       'Setzt Befehle um, verteilt Infos, hält alle synchron.',
       'Greift ein, wenn Bereiche sich überschneiden oder blockieren.',
@@ -150,7 +150,7 @@ const overviewSections: OverviewSection[] = [
     ],
     dailyDuties: [
       'Koordiniert Termine, checkt Berichte.',
-      'Spricht für den Patrón, wenn es nötig ist.',
+      'Spricht für die Patrona, wenn es nötig ist.',
       'Sorgt dafür, dass Capitán & Comandante harmonieren.',
     ],
   },
@@ -281,15 +281,15 @@ const overviewSections: OverviewSection[] = [
 const treeNodes: Record<string, TreeNode> = {
   patron: {
     id: 'patron',
-    label: 'Patrón / Jefe Supremo',
-    summary: 'La cabeza. El alma. Der Boss.',
+    label: 'La Patrona / Jefa Suprema',
+    summary: 'La cabeza. El alma. Die Bossin.',
     responsibilities: [
       'Setzt die Richtung – visión y estrategia.',
       'Entscheidet, wer lebt, wer fällt, wer aufsteigt.',
       'Behält alles im Blick, mischt sich nur ein, wenn es brennt.',
     ],
     dailyDuties: [
-      'Besprechungen mit seinen Onces, letzte Worte bei Deals.',
+      'Besprechungen mit ihren Onces, letzte Worte bei Deals.',
       'Hört sich Berichte an und entscheidet, was passiert.',
       'Gibt Richtung vor – sin rodeos.',
     ],
@@ -306,7 +306,7 @@ const treeNodes: Record<string, TreeNode> = {
     dailyDuties: [
       'Checkt Routen, segnet Transporte ab.',
       'Schiebt Projekte an – sin errores.',
-      'Berichtet direkt an den Patrón.',
+      'Berichtet direkt an die Patrona.',
     ],
   },
   comandante: {
@@ -316,7 +316,7 @@ const treeNodes: Record<string, TreeNode> = {
     responsibilities: [
       'Führt Sicarios, plant Sicherheitsmaßnahmen.',
       'Macht Gegenspionage, sorgt für Ruhe im Territorio.',
-      'Schützt Patrón, Familia und Lieferungen.',
+      'Schützt die Patrona, Familia und Lieferungen.',
     ],
     dailyDuties: [
       'Trainiert Sicarios, analysiert Bewegungen.',
@@ -327,7 +327,7 @@ const treeNodes: Record<string, TreeNode> = {
   'mano-derecha': {
     id: 'mano-derecha',
     label: 'El Mano Derecha – Coordinador',
-    summary: 'La voz del Patrón. Sorgt dafür, dass alle Rädchen ineinandergreifen.',
+    summary: 'La voz de la Patrona. Sorgt dafür, dass alle Rädchen ineinandergreifen.',
     responsibilities: [
       'Setzt Befehle um, verteilt Infos, hält alle synchron.',
       'Greift ein, wenn Bereiche sich überschneiden oder blockieren.',
@@ -335,7 +335,7 @@ const treeNodes: Record<string, TreeNode> = {
     ],
     dailyDuties: [
       'Koordiniert Termine, checkt Berichte.',
-      'Spricht für den Patrón, wenn es nötig ist.',
+      'Spricht für die Patrona, wenn es nötig ist.',
       'Sorgt dafür, dass Capitán & Comandante harmonieren.',
     ],
   },
@@ -494,14 +494,14 @@ const treeNodes: Record<string, TreeNode> = {
 const organigramLevels: OrganigramLevel[] = [
   {
     id: 'level-1',
-    title: '⚜️ Patrón',
+    title: '⚜️ La Patrona',
     description: 'Das Oberhaupt – alle Macht, alle Entscheidungen.',
     nodes: ['patron'],
   },
   {
     id: 'level-2',
-    title: '⚔️ Los Onces – Die Ersten unter dem Patrón',
-    description: 'Operaciones & Seguridad – direkt dem Patrón unterstellt.',
+    title: '⚔️ Los Onces – Die Ersten unter der Patrona',
+    description: 'Operaciones & Seguridad – direkt der Patrona unterstellt.',
     nodes: ['capitan', 'comandante'],
   },
   {
@@ -541,8 +541,8 @@ const allNodeIds = organigramLevels.flatMap((level) => level.nodes)
 const assignmentRoles: AssignmentRole[] = [
   {
     id: 'patron',
-    label: 'Patrón / Jefe Supremo',
-    description: 'La cabeza. El alma. Der Boss.',
+    label: 'La Patrona / Jefa Suprema',
+    description: 'La cabeza. El alma. Die Bossin.',
     icon: <Crown className="h-5 w-5 text-amber-400" />,
   },
   {
@@ -560,7 +560,7 @@ const assignmentRoles: AssignmentRole[] = [
   {
     id: 'mano-derecha',
     label: 'El Mano Derecha – Coordinador',
-    description: 'La voz del Patrón. Koordiniert zwischen den Onces.',
+    description: 'La voz de la Patrona. Koordiniert zwischen den Onces.',
     icon: <BadgeCheck className="h-5 w-5 text-cyan-400" />,
   },
   {
@@ -759,7 +759,7 @@ export default function OrganigrammPage() {
             </div>
             <p className="text-amber-300/70 text-sm">Rollen im Organigramm</p>
             <p className="text-2xl font-bold text-white">{assignmentRoles.length}</p>
-            <p className="text-xs text-gray-500 mt-1">Hierarchiestufen von Patrón bis Operatives Team</p>
+            <p className="text-xs text-gray-500 mt-1">Hierarchiestufen von La Patrona bis Operatives Team</p>
           </CardContent>
         </Card>
         
@@ -798,7 +798,7 @@ export default function OrganigrammPage() {
               Organigramm der Führung
             </CardTitle>
             <CardDescription className="text-gray-400">
-              Alle Ebenen von Patrón bis hin zu den operativen Kräften
+              Alle Ebenen von La Patrona bis hin zu den operativen Kräften
             </CardDescription>
           </div>
           <div className="flex flex-wrap gap-2">

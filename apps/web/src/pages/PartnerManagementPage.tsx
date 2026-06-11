@@ -943,7 +943,7 @@ export default function PartnerManagementPage() {
               </CardTitle>
               <CardDescription>
                 Bestimme welche Mitglieder Partner-Anfragen und Vorschläge verwalten dürfen.
-                Leadership (Patron, Don, Asesor) hat automatisch Zugriff.
+                Leadership (La Patrona, Don, El Mano Derecha) hat automatisch Zugriff.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
