@@ -43,6 +43,12 @@ RUN pnpm install --no-frozen-lockfile
 COPY --from=build /app/dist ./dist
 COPY --from=build /app/prisma ./prisma
 
+# Kopiere Scripts + tsconfig, damit `pnpm db:seed`, `setup-discord-roles`,
+# `set-default-admin` usw. via ts-node im Production-Container laufen können
+COPY --from=build /app/src/scripts ./src/scripts
+COPY --from=build /app/src/prisma  ./src/prisma
+COPY --from=build /app/tsconfig.json ./tsconfig.json
+
 # Kopiere Default Casa-Bilder aus dem Build Context
 COPY uploads/casa/*.png ./uploads/casa/
 
